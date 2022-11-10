@@ -6,7 +6,7 @@
  * @description: A set of functions called "actions" for managing `Order`.
  */
 
-const stripe = require("stripe")("sk_test_51LkBlcKuOke8qQn9HQPcq3SEtJ9lgiX162eHeOJuXiYrTXewPEwyQ4RnRUtbaLSkxneFBeAi0QCXTlPeDWeQ4jfL00n79jcXyP");
+const stripe = require("stripe")(process.env.STRIPE_SK);
 
 module.exports = {
   /**
